@@ -1,0 +1,174 @@
+body {
+	background: #FAFAFB;
+}
+
+header {
+	font-size: 14px;
+	background: #fff;
+	height: 70px;
+	box-shadow: inset 0px -1px 0px #E2E2EA;
+	.logo {
+		float: left;
+		width: 250px;
+		img{
+			max-width: 100%;
+			padding: 16px 0 22px 25px;
+		}
+	}
+	.buttons{
+		float: right;
+		margin: 12px 0 20px 0;
+		.signin{
+			display: inline-block;
+			button{
+				color: #696974;
+				background: #F1F1F5;
+				border-radius: 10px;
+				border: none;
+				padding: 9px 24px 8px 23px;
+				margin-right: 20px;
+				font-weight: bold;
+			}
+		}
+		.login{
+			display: inline-block;
+			button{
+				color: #FFFFFF;
+				background: #0062FF;
+				border-radius: 10px;
+				border: none;
+				padding: 8px 23px 9px 27px;
+				margin-right: 276px;
+				font-weight: bold;
+			}
+
+		}
+	}
+}
+
+.container{
+	max-width: 374px;
+	padding: 0;
+}
+.main{
+	.title{
+		margin-top: 85px;
+		font-weight: 600;
+		font-size: 25px;
+		color: #000000;
+		text-align: center;
+	}
+	.form{
+		margin-top: 27px;
+		text-align: center;
+		.e-mail{
+			margin-bottom: 21px;
+			input{
+				background-image: url('../img/login/e-mail.png');
+			}
+		}
+
+		.password{
+			margin-bottom: 12px;
+			input{
+				background-image: url('../img/login/key.png');
+			}
+		}
+		input{
+			width: 100%;
+			background: #F3F3F3;
+			background-repeat: no-repeat;
+			background-position: calc(10% - 22px) center;
+			border: 1px solid #DFDFDF;
+			border-radius: 10px;
+			padding: 9px 0 8px 47px;
+			font-weight: 400;
+			font-size: 14px;
+			color: rgba(0, 0, 0, 0.3);
+		}
+	}
+	.forgot{
+		font-size: 11px;
+		width: 91px;
+		margin-left: auto;
+		margin-right: - 8px;
+	}
+	.button-login{
+		text-align: center;
+		margin-top: 12px;
+		button{
+			font-style: normal;
+			font-weight: 600;
+			font-size: 14px;
+			color: #FFFFFF;
+			background: #0062FF;
+			border-radius: 10px;
+			padding: 8px 0 9px 0;
+			width: 100%;
+			border: none;
+		}
+	}
+	.or{
+		text-align: center;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		color: #000000;
+		margin: 19px 0 24px 0;
+	}
+	.social{
+		margin-bottom: 38px;
+		.item{
+			background: #F3F3F3;
+			border: 1px solid #DFDFDF;
+			border-radius: 10px;
+			padding: 10px 25px 6px 22px;
+			height: 53px;
+			width: 82px;
+			a{
+				text-decoration: none;
+				font-style: normal;
+				font-weight: 400;
+				font-size: 10px;
+				color: rgba(0, 0, 0, 0.4);
+				.img{
+					position: relative;
+					text-align: center;
+					height: 24px;
+					img{
+						vertical-align: middle;
+						max-width: 24px;
+						max-height: 24px;
+						position: absolute;
+						top: 0;
+						right: 0;
+						bottom: 0;
+						left: 0;
+						margin: auto;
+					}
+				}
+				.text{
+					text-align: center;
+				}
+			}
+		}
+		.tg{
+
+		}
+	}
+	.no-profile{
+		padding-top: 27px;
+		border-top: 1px solid rgba(0, 0, 0, 0.1);
+		text-align: center;
+		.text{
+			display: inline-block;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 14px;
+			color: #000000;
+		}
+		.link{
+			display: inline-block;
+		}
+	}
+}

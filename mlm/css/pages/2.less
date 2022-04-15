@@ -1,0 +1,125 @@
+
+.container{
+	padding: 0;
+}
+body{
+	background-color: #FAFAFB;
+}
+.header{
+	.title{
+		display: inline-block;
+		font-weight: 600;
+		font-size: 24px;
+		color: #171725;
+		padding-bottom: 44px;
+		span{
+			color: #92929D;
+			font-size: 18px;
+			font-weight: 500;
+		}
+	}
+	.buttons{
+		float: right;
+		display: inline-block;
+		button{
+			padding: 10px 34px 7px 35px;
+			&:nth-of-type(1){
+				background: #FFFFFF;
+				border: 1px solid #ECECEC;
+				border-radius: 10px;
+				color: #000000;
+				font-weight: 600;
+				font-size: 14px;
+			}
+			&:last-of-type{
+				margin-left: 18px;
+				background: #0062FF;
+				border-radius: 10px;
+				font-weight: 600;
+				font-size: 14px;
+				color: #fff;
+				border: none;
+				background-image: url("../../img/pages/plus.png");
+				background-repeat: no-repeat;
+				background-position: calc(10% - 5px) center;
+			}
+		}
+	}
+}
+.main{
+	font-size: 14px;
+	.item{
+		background: #FFFFFF;
+		border-radius: 20px;
+		padding: 43px 32px 42px 36px;
+		text-align: center;
+		.title{
+			font-weight: 500;
+			font-size: 20px;
+			margin-bottom: 21px;
+		}
+		.link{
+			text-decoration-line: underline;
+			font-weight: 400;
+			font-size: 21px;
+			background: #FFFFFF;
+			box-shadow: 0px 0px 51px rgba(0, 0, 0, 0.05);
+			border-radius: 20px;
+			padding: 30px 0px;
+			margin-bottom: 21px;
+		}
+		.button{
+			cursor: pointer;
+			background: #FFFFFF;
+			border: 1px solid rgba(0, 0, 0, 0.1);
+			box-sizing: border-box;
+			border-radius: 20px;
+			padding: 20px 0 24px 0;
+			margin-bottom: 21px;
+			font-size: 13px;
+			img{
+				display: inline-block;
+				margin-right: 10px;
+			}
+			.text{
+				display: inline-block;
+			}
+		}
+		&:last-of-type{
+			.qr{
+				img{
+					max-width: 100%;
+				}
+			}
+			.png, .jpg, .svg{
+				display: inline-block;
+				font-size: 19px;
+				cursor: pointer;
+				font-weight: 500;
+			}
+		}
+	}
+	.item-3{
+		.title{
+			margin-bottom: 0;
+		}
+		.link{
+			padding: 16px 0;
+			text-decoration-line: none;
+			box-shadow: none;
+			background: transparent;
+		}
+		.download{
+			margin-top: 43px;
+			text-align: left;
+			.download-qr{
+				color: rgba(0, 0, 0, 0.6);
+				font-size: 14px;
+				cursor: pointer;
+			}
+		}
+		.button-1{
+			margin-top: 51px;
+		}
+	}
+}

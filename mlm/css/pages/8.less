@@ -1,0 +1,124 @@
+.container{
+	padding: 0;
+}
+body{
+	background-color: #FAFAFB;
+}
+.header{
+	font-weight: 600;
+	font-size: 24px;
+	color: #171725;
+	padding-bottom: 44px;
+}
+.calendar{
+	float: right;
+	color: #44444F;
+	.date{
+
+		display: inline-block;
+		background: #FFFFFF;
+		border-radius: 8px;
+		padding: 8px 15px 6px 13px;
+		img{
+			vertical-align: middle;
+			&:nth-of-type(1){
+				margin-right: 14px;
+			}
+			&:nth-of-type(2){
+				margin-left: 11px;
+			}
+		}
+	}
+	.week-year{
+		margin-left: 7px;
+		display: inline-block;
+		background: #FFFFFF;
+		border-radius: 8px;
+		padding: 2px 23px 2px 12px;
+		.month{
+			background: #0062FF;
+			border-radius: 8px;
+			color: #FFFFFF;
+			margin-right: 23px;
+			padding: 5px 14px;
+		}
+		.week{
+			margin-right: 12px;
+		}
+	}
+	.week, .month, .year{
+		display: inline-block;
+	}
+}
+.main{
+	margin-bottom: 58px;
+	font-weight: 600;
+	.item{
+		background: #FFFFFF;
+		border-radius: 20px;
+		padding: 20px 25px 29px 27px;
+		color: #171725;
+		.title{
+			font-size: 16px;
+			white-space: nowrap;
+		}
+		.price{
+			font-size: 28px;
+		}
+	}
+}
+
+.table-wrap{
+	table{
+		tbody{
+			td{
+				padding: 35px 20px 30px 25px;
+				.method{
+					.link{
+						background: #FAFAFB;
+						border: 1px solid rgba(0, 0, 0, 0.1);
+						box-sizing: border-box;
+						border-radius: 7px;
+						font-weight: 400;
+						font-size: 10px;
+						color: #0062FF;
+						text-align: center;
+						cursor: pointer;
+						width: 50%;
+						padding: 6px 0;
+						display: inline-block;
+					}
+					img{
+						max-width: 100%;
+						margin-left: 10px;
+						cursor: pointer;
+					}
+				}
+				&:nth-of-type(2){
+					width: 20%;
+					span{
+						display: block;
+						&:nth-of-type(2){
+							font-weight: 400;
+							font-size: 10px;
+							color: rgba(0, 0, 0, 0.6);
+							margin-top: 6px;
+						}
+					}
+				}
+				&:nth-of-type(6){
+					width: 25%;
+				}
+				&:nth-of-type(5){
+					width: 5%;
+				}
+				&:nth-of-type(4){
+					width: 15%;
+				}
+				&:nth-of-type(3){
+					width: 25%;
+				}
+			}
+		}
+	}
+}
