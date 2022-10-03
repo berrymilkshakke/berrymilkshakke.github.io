@@ -1,0 +1,237 @@
+/*
+Custom css
+*/
+
+h1 {
+	font-size: 1rem;
+}
+
+.table-no-hover>tbody>tr:hover td {
+    background-color: #fff;
+}
+
+/*
+ * Таблица Bootstrap поиск во всю ширину
+ */
+.bootstrap-table .search {
+	width: calc(100% - 43px);
+}
+.product-table .search {
+	width: calc(100% - 38px);
+}
+.product-table td:last-of-type {
+	min-width: 85px;
+	white-space: nowrap;
+}
+
+/*
+ * Таблица заказов
+ */
+.orders-table tbody td {
+	cursor: pointer;
+} 
+
+/*
+ * Таблица Bootstrap выбор кол-во записей в таблице
+ */
+.bootstrap-table .page-list {
+	margin-left: 25px;
+}
+
+/*
+ * Таблица бутсрап 100%
+ */
+.bootstrap-table {
+	width: 100%;
+} 
+
+/* 
+ * Таблица бутстрап картинка по центру td
+ */
+table td img {
+	margin: 0 auto;
+	display: block;
+}
+
+
+/*
+ * Каталог, комплекты
+ */
+.complect-title {
+	margin-bottom: 21px;
+} 
+.complect-logo {
+	display: inline-block;
+	vertical-align: middle;
+} 
+.complect-name {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 17px;
+}
+.complect {
+	overflow: hidden;
+	border-radius: 4px;
+} 
+.complects .complect-wrap:not(:first-of-type) {
+	margin-top: 10px;
+}
+.complect .complect-item {
+	position: relative;
+	z-index: 0;
+	color: #FFF;
+	text-align: center;
+	background-size: cover;
+	height: 200px;
+	padding-top: 115px;
+	background-position: bottom;
+} 
+.complect .complect-item:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-image: -moz-linear-gradient( 90deg, rgba(0,0,0,0.52941) 0%, rgba(0,0,0,0.36) 32%, rgba(0,0,0,0) 100%);
+	background-image: -webkit-linear-gradient( 90deg, rgba(0,0,0,0.52941) 0%, rgba(0,0,0,0.36) 32%, rgba(0,0,0,0) 100%);
+	background-image: -ms-linear-gradient( 90deg, rgba(0,0,0,0.52941) 0%, rgba(0,0,0,0.36) 32%, rgba(0,0,0,0) 100%);
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+} 
+.complect .complect-background-top-center {
+	background-size: 85px 85px;
+    background-position: center 18px;
+    background-repeat: no-repeat;
+    color: #98A3AF !important;
+}
+.complect .complect-background-top-center:before {
+	display: none;
+}
+.complect .complect-item:nth-of-type(2) .complect-container:before,
+.complect .complect-item:nth-of-type(3) .complect-container:before {
+	content: '+';
+	position: absolute;
+	left: -11px;
+	bottom: 38px;
+	z-index: 1;
+	font-weight: bold;
+	font-size: 30px;
+} 
+.complect .complect-item.complect-background-top-center .complect-container:before {
+	color: #98A3AF !important;
+}
+.complect .complect-item:first-of-type {
+	padding-left: 30px;
+}
+.complect .complect-type {
+	font-size: 11px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.complect .complect-name {
+	font-size: 15px;
+	font-weight: bold;
+	margin: 3px 0 6px 0;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.complect .complect-price {
+	font-size: 15px;
+	font-weight: bold;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.complect strike {
+	color: #AEBECF;
+}
+
+.catalog-row .category {
+	height: 267px;
+	color: #FFF;
+	text-align: center;
+	padding-top: 67px;
+	overflow: hidden;
+	border-radius: 4px;
+	background-size: cover;
+}
+.catalog-row .category .category-counter {
+	font-size: 47px;
+	margin: 0px 0 5px 0;
+}
+.catalog-row .category .category-link {
+	border-bottom: 1px solid;
+	text-decoration: none;
+}
+
+/*
+ * Инпут с -+
+ */
+.input-minus-plus .input-group-prepend,
+.input-minus-plus .input-group-append {
+	cursor: pointer;
+} 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+/*
+ * label-картинка рядом с radio:checked
+ */
+input[type="radio"]:checked+img {
+	border: 1px solid #1082FE; 
+	padding: 2px; 
+	border-radius: 5px;
+} 
+
+/*
+ * slick-slider
+ */
+.slick-next:before, 
+.slick-prev:before {
+	color: #647787 !important;
+} 
+.slick-slide img {
+	margin: 0 auto;
+}
+.slick-prev {
+	left: -55px !important;
+}
+.slick-next {
+	right: -55px !important;
+}
+.slick-slider .img-title {
+	padding: 10px 10px 0 10px;
+	color: #647787;
+}
+
+/*
+ * Хедер превью корзины
+ */
+.product-cart-preview .product-name,
+.product-cart-preview .product-name a {
+	width: 200px; 
+	overflow: hidden; 
+	text-overflow: ellipsis; 
+	white-space: nowrap;
+	display: block;
+	max-width: 100%;
+} 
+.product-cart-preview .product-price {
+	width: 82px; 
+	white-space: nowrap;
+}
+
+.product-cart-preview .product-count {
+	white-space: nowrap;
+}
+
+/* заголовок .card */
+.card-header {
+	font-weight: 500;
+}
