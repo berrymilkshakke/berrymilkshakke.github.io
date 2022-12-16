@@ -1,0 +1,149 @@
+<link href="css/pages/11.css" rel="stylesheet">
+
+<div class="container">
+	<div class="row">
+		<div class="main-title">Настройки профиля</div>
+		<div class="col-lg-4">
+			<div class="settings">
+				<div class="header">Настройки</div>
+				<div class="border-bottom"></div>
+				<ul>
+					<li class="active">Информация</li>
+					<li>Контактные данные</li>
+					<li>Смена пароля</li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-lg-5">
+			<div class="main">
+				<div class="info contents">
+					<div class="header">Информация о Вас</div>
+					<div class="change-photo">
+						<div class="image">
+							<img src="img/pages/profile.png">
+						</div>
+						<div class="content">
+							<span>Изменить фото профиля</span>
+							<span>Удалить фото</span>
+						</div>
+					</div>
+					<div class="inputs">
+						<div class="input input-name">
+							<div class="input-title">Ваши ФИО</div>
+							<input type="text" placeholder="Иванов Иван Иванович">
+						</div>
+						<div class="input input-date">
+							<div class="input-title">Ваша дата рождения</div>
+							<input type="date" placeholder="14.02.1992">
+						</div>
+						<div class="input input-form">
+							<div class="input-title">Ваш пол</div>
+							<form>
+								<p><label><input type="radio" name="contact" value="men"> Мужской</label></p>
+								<p><label><input type="radio" name="contact" value="woman"> Женский</label></p>
+							</form>
+						</div>
+						<div class="input input-web">
+							<div class="input-title">Внешние ресурсы (соц. сети или сайт)</div>
+							<input type="text" placeholder="instagram.com/username">
+							<div class="add">Добавить еще один ресурс</div>
+						</div>
+						<div class="input input-city">
+							<div class="input-title">Ваш город</div>
+							<input type="text" placeholder="Москва">
+						</div>
+					</div>
+					<div class="button-save">
+						<button>Сохранить</button>
+					</div>
+				</div>
+				<div class="contacts contents">
+					<div class="header">Контактная информация</div>
+					<div class="inputs">
+						<div class="input input-tel">
+							<div class="input-title">Ваш номер телефона</div>
+							<input type="tel" placeholder="+7 (999) 999-99-99">
+						</div>
+						<div class="input input-mail">
+							<div class="input-title">Ваш адрес Вашей эл. почты</div>
+							<input type="email" placeholder="ivanivanov@mail.ru">
+						</div>
+						<div class="input input-wa">
+							<div class="input-title">Подключенный аккаунт WhatsApp</div>
+							<div class="numder">+7 (999) 999-99-99</div>
+							<div class="change-number">Изменить</div>
+						</div>
+						<div class="input input-tg">
+							<div class="input-title">Подключенный аккаунт Telegram</div>
+							<div class="input-button button-tg">
+								<button>Подключить</button>
+							</div>
+							<div class="instruction">Инструкция</div>
+						</div>
+						<div class="input input-vb">
+							<div class="input-title">Подключенный аккаунт Viber</div>
+							<div class="input-button button-vb">
+								<button>Подключить</button>
+							</div>
+							<div class="instruction">Инструкция</div>
+						</div>
+					</div>
+					<div class="button-save">
+						<button>Сохранить</button>
+					</div>
+				</div>
+				<div class="password contents">
+					<div class="header">Сменить пароль</div>
+					<div class="restore">
+						<span>Не помните пароль?</span>
+						<span>Восстановить</span>
+					</div>
+					<div class="inputs">
+						<div class="input input-password">
+							<div class="input-title">Введите старый пароль</div>
+							<input type="password" placeholder="Введите пароль">
+						</div>
+						<div class="input input-new-password">
+							<div class="input-title">Придумайте новый пароль</div>
+							<input type="password" placeholder="Введите пароль">
+							<input type="password" placeholder="Повторите пароль">
+						</div>
+					</div>
+					<div class="button-change button-save">
+						<button>Изменить пароль</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+//tabs
+$('.container .settings ul li').click(function() {
+
+		// убираем у всех табов активный класс
+		$('.container .settings ul li').removeClass('active');
+
+		// добавляем нажатому заголовку активный класс
+		$(this).addClass('active');
+
+		// узнали порядковый номер (начинается с нуля)
+		tab_index = $(this).index();
+
+		// прибавили единицу, т.к. в nth-of-type() отсчет идет с единицы
+		tab_index = tab_index + 1;
+
+		// спрятали все текстовые блоки
+		$('.container .main .contents').hide();
+
+		// показали нужный текст по его индексу
+		$('.container .main .contents:nth-of-type('+tab_index+')').show();
+
+	});
+</script>
+
+<script>
+	if($(window).width() < 1200) {
+		$('.col-lg-5').removeClass('col-lg-5').addClass('col-lg-8');
+	}
+</script>
