@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Wremena';
+    src: url('Wremena-Light.eot');
+    src: local('Wremena Light'), local('Wremena-Light'),
+        url('Wremena-Light.eot?#iefix') format('embedded-opentype'),
+        url('Wremena-Light.woff2') format('woff2'),
+        url('Wremena-Light.woff') format('woff'),
+        url('Wremena-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Wremena';
+    src: url('Wremena.eot');
+    src: local('Wremena'),
+        url('Wremena.eot?#iefix') format('embedded-opentype'),
+        url('Wremena.woff2') format('woff2'),
+        url('Wremena.woff') format('woff'),
+        url('Wremena.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Wremena';
+    src: url('Wremena-Bold.eot');
+    src: local('Wremena Bold'), local('Wremena-Bold'),
+        url('Wremena-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Wremena-Bold.woff2') format('woff2'),
+        url('Wremena-Bold.woff') format('woff'),
+        url('Wremena-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
