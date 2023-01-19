@@ -19,26 +19,20 @@
 <body>
 	<header>
 		<div class = "container">
-				<div class = "menuLogo">
-					<img src = "image/menu.svg" alt = "">
-				</div>
-				<div class = "crossLogo">
-					<img src = "image/cross.svg" alt = "">
-				</div>
-				<div class = "menu">
-					<div class = "headerElement headerHome">
+				<div class = "menu" id = "menu">
+					<div class = "headerElement headerHome" id = "headerElement">
 						<a href = "#home">Home</a>
 					</div>
-					<div class = "headerElement">
+					<div class = "headerElement" id = "headerElement">
 						<a href = "#about">About</a>
 					</div>
-					<div class = "headerElement">
+					<div class = "headerElement" id = "headerElement">
 						<a href = "#skills">Skills</a>
 					</div>
-					<div class = "headerElement">
+					<div class = "headerElement" id = "headerElement">
 						<a href = "#portfolio">Portfolio</a>
 					</div>
-					<div class = "headerElement headerContacts">
+					<div class = "headerElement headerContacts" id = "headerElement">
 						<a href = "#contacts">Contacts</a>
 					</div>
 				</div>
@@ -303,27 +297,6 @@
 				}
 			}
 			]
-		});
-
-		$('.menuLogo img').click(function(){
-			$('.menu').css('display', 'block');
-			$('.headerElement').css('display', 'block');
-			$('.menuLogo').hide();
-			$('.crossLogo').toggle();
-		});
-
-		$('.crossLogo').click(function(){
-			$('.crossLogo').toggle();
-			$('.menu').css('display', 'none');
-			$('.headerElement').css('display', 'none');
-			$('.menuLogo').toggle();
-		});
-
-		$('.headerElement').click(function(){
-			$('.crossLogo').toggle();
-			$('.menu').css('display', 'none');
-			$('.headerElement').css('display', 'none');
-			$('.menuLogo').toggle();
 		});
 	</script>
 </body>
