@@ -87,13 +87,18 @@
 			<div class="mark_comment">
 				<div class="mark_title mark_title-comment">Добавить комментарий к книге</div>
 				<form class="mark_form">
-					<input class= "mark_input mark_name" type="text" placeholder="Имя">
-					<input class="mark_input mark_mail" type="email" placeholder="E-mail">
-
+					<div class="mark_input-wrap">
+						<input class="mark_input mark_name" id="mark_name" type="text" placeholder="Имя">
+						<label for="mark_name">Имя</label>
+					</div>
+					<div class="mark_input-wrap">
+						<input class="mark_input mark_mail" id="mark_email" type="email" placeholder="E-mail">
+						<label for="mark_email">E-mail</label>
+					</div>
 					<select class="mark_input mark_book">
 						<option selected disabled>Выберите книгу</option>
 						<option>JavaScript ниндзя</option>
-						<option>Guide to JavaScript</option>
+						<option>Pragmatic Guide to JavaScript</option>
 						<option>Pro JavaScript Techniques</option>
 						<option>Выразительный JavaScript</option>
 					</select>

@@ -139,7 +139,7 @@ body{
 		font-family: 'Open Sans', sans-serif;
 		font-style: italic;
 		font-weight: 400;
-		font-size: 16px;
+		font-size: 18px;
 		line-height: 24px;
 		.direction_image{
 			position: absolute;
@@ -175,42 +175,49 @@ body{
 .advertising{
 	background-color: #EDEDED;
 	padding: 34px 0 36px 0;
-	.advertising_link{
-		font-family: "Helvetica";
-		font-weight: 400;
-		font-size: 14px;
-		color: #000000;
-		a{
-			color: #0035FF;
+	.container{
+		max-width: 610px;
+		.advertising_link{
+			font-family: "Helvetica";
+			font-weight: 400;
+			font-size: 14px;
+			color: #000000;
+			a{
+				color: #0035FF;
+			}
 		}
-	}
-	.advertising_image{
-		margin-top: 17px;
-		text-align: center;
-		img{
-			max-width: 100%;
-		}
-
-		@media(max-width: 768px){
-			display: none;
-		}
-	}
-
-	.advertising_image-hide{
-		display: none;
-
-		@media(max-width: 768px){
-			display: block;
+		.advertising_image{
+			margin-top: 17px;
 			text-align: center;
-			margin-top: 14px;
 			img{
 				max-width: 100%;
 			}
-		}
-	}
 
-	@media(max-width: 768px){
-		padding: 22px 0 20px 0;
+			@media(max-width: 768px){
+				display: none;
+			}
+		}
+
+		.advertising_image-hide{
+			display: none;
+
+			@media(max-width: 768px){
+				display: block;
+				text-align: center;
+				margin-top: 14px;
+				img{
+					max-width: 100%;
+				}
+			}
+		}
+
+		@media(max-width: 768px){
+			padding: 22px 0 20px 0;
+		}
+
+		@media(max-width: 768px){
+			max-width: 280px;
+		}
 	}
 }
 
@@ -314,10 +321,40 @@ body{
 
 	.mark_form{
 		margin-top: 15px;
+		.mark_input-wrap {
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+			margin: 0 11px;
+			label {
+				position: absolute;
+				left: 20px;
+				top: 8px;
+				opacity: 0;
+				color: #777777;
+				transition: 0.5s;
+			}
+			input:not(:placeholder-shown) + label {
+				opacity: 1;
+				transition: 0.5s;
+			}
+			input:not(:placeholder-shown) {
+				padding-top: 35px;
+			}
+			&:first-of-type {
+				margin-left: 0;
+			}
+
+			@media(max-width: 768px){
+				width: 100%;
+				margin: 0;
+			}
+		}
 		.mark_input{
-			margin: 0 9px;
 			padding: 20px;
-			width: 186px;
+			width: 226px;
+			height: 57px;
+			box-sizing: border-box;
 			background: #FFFFFF;
 			border: 1px solid #E6E6E6;
 			border-radius: 6px;
@@ -333,9 +370,6 @@ body{
 				box-sizing: border-box;
 			}
 		}
-		.mark_name{
-			margin-left: 0;
-		}
 		.mark_book{
 			margin-right: 0;
 			width: 227px;
@@ -345,9 +379,8 @@ body{
 			padding: 20px 0 80px 20px;
 			width: 100%;
 			box-sizing: border-box;
-
-			@media(max-width: 768px){
-				margin: 0;
+			@media(max-width: 768px) {
+				margin-top: 0px;
 			}
 		}
 		.mark_button{
