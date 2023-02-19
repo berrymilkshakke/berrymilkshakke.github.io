@@ -26,7 +26,6 @@ body{
 }
 
 .main{
-
 	* {
 		scrollbar-width: auto;
 		scrollbar-color: #0062ff #e6e6e6;
@@ -498,20 +497,50 @@ body{
 		box-shadow: 0px 2px 15px rgba(154, 154, 154, 0.5);
 		border-radius: 0;
 	}
-}
+	.select2-dropdown{
+		.select2-search{
+			.select2-search__field{
+				display: none !important;
+			}
+		}
+		.select2-search--dropdown{
+			display: none !important;
+		}
+		.select2-results{
+			.select2-results__options{
+				.select2-results__option{
+					padding: 15px 0 15px 25px !important;
+					font-size: 14px !important;
+					font-family: 'Arial';
+				}
+				.select2-results__option--disabled{
+					display: none;
+				}
 
-.sselect2-search, .select2-search__field, .select2-search--dropdown{
-	display: none !important;
-}
 
-.select2-results__option{
-	padding: 15px 0 15px 25px !important;
-	font-size: 14px !important;
-	font-family: 'Arial';
-}
+				.select2-results__option--highlighted{
+					color: #222222 !important;
+					background-color: #EDEDED !important;
+					position: relative;
 
-.select2-results__option--disabled{
-	display: none;
+					&:before{
+						display: inline-block;
+						content: '';
+						background-color: #0062FF;
+						width: 7px;
+						height: 100%;
+						height: 47px;
+						position: absolute;
+						left: 0;
+						top: 0;
+					}
+				}
+
+
+			}
+		}
+	}
+
 }
 
 .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow {
@@ -531,7 +560,6 @@ body{
 	background-position: center;
 	top: calc((100% - 26px)/2) !important;
 	right: 22px !important;
-
 	b{
 		display: none !important;
 	}
@@ -547,23 +575,5 @@ body{
 		font-size: 14px;
 		padding-right: 35px !important;
 		padding-left: 6px !important;
-	}
-}
-
-.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable{
-	color: #222222 !important;
-	background-color: #EDEDED !important;
-	position: relative;
-
-	&:before{
-		display: inline-block;
-		content: '';
-		background-color: #0062FF;
-		width: 7px;
-		height: 100%;
-		height: 47px;
-		position: absolute;
-		left: 0;
-		top: 0;
 	}
 }
