@@ -10,7 +10,11 @@ body{
 button, input, select {
 	box-shadow: none !important;
 }
-
+@media (max-width: 767px) {
+	.col-md-9 {
+		max-width: calc(100% - 56px) !important;
+	}
+}
 .sidebar{
 	height: 100vh !important;
 	box-shadow: 0px 0px 38px rgba(136, 167, 245, 0.08) !important;
@@ -20,12 +24,12 @@ button, input, select {
 		img{
 			max-width: 100%;
 
-			@media(max-width: 576px){
+			@media(max-width: 768px){
 				width: 36px;
 			}
 		}
 
-		@media(max-width: 576px){
+		@media(max-width: 768px){
 			margin: 30px 10px 20px 10px !important;
 		}
 	}
@@ -58,14 +62,17 @@ button, input, select {
 					}
 				}
 
-				@media(max-width: 576px){
+				@media(max-width: 768px){
 					margin-left: 0;
+					span {
+						display: none !important;
+					}
 					svg{
 						margin-right: 0;
 					}
 				}
 
-				@media(min-width: 576px) {
+				@media(min-width: 768px) {
 					.d-sm-inline {
 						display: inline-block !important;
 						max-width: calc(100% - 50px);
@@ -89,7 +96,7 @@ button, input, select {
 				background-color: #6666CC;
 				box-shadow: 0px 2px 10px rgba(102, 102, 204, 0.67);
 
-				@media(max-width: 576px){
+				@media(max-width: 768px){
 					height: 0;
 				}
 			}
@@ -102,7 +109,8 @@ button, input, select {
 				}
 			}
 		}
-		@media(max-width: 576px) {
+
+		@media(max-width: 768px) {
 			text-align: center;
 		}
 	}
@@ -135,7 +143,7 @@ button, input, select {
 				}
 			}
 
-			@media(max-width: 576px){
+			@media(max-width: 768px){
 				display: none;
 			}
 		}
@@ -155,19 +163,19 @@ button, input, select {
 				.profile_name{
 					margin-left: 16px;
 
-					@media(max-width: 768px){
+					@media(max-width: 1024px){
 						display: none;
 					}
 				}
 
-				@media(max-width: 768px){
+				@media(max-width: 1024px){
 					padding: 0;
 				}
 			}
 
 			.menu_messege{
 				img{
-					@media(max-width: 768px){
+					@media(max-width: 1024px){
 						width: 45px;
 					}
 				}
@@ -196,7 +204,7 @@ button, input, select {
 			}
 		}
 
-		@media(max-width: 576px){
+		@media(max-width: 768px){
 			text-align: center;
 		}
 	}
@@ -206,7 +214,7 @@ button, input, select {
 		color: #343434;
 		margin: 30px 0 25.5px 0;
 
-		@media(max-width: 576px){
+		@media(max-width: 768px){
 			text-align: center;
 		}
 	}
@@ -218,9 +226,9 @@ button, input, select {
 		.table{
 			margin-bottom: 0;
 			thead{
-				@media(max-width: 992px){
-						display: none !important;
-					}
+				@media(max-width: 1199px){
+					display: none !important;
+				}
 				tr{
 					color: #343434;
 					font-size: 14px;
@@ -250,7 +258,7 @@ button, input, select {
 					font-size: 14px;
 					&:nth-of-type(1){
 
-						@media(max-width: 992px){
+						@media(max-width: 1199px){
 							border-bottom: 1px solid #dee2e6;
 						}
 					}
@@ -291,7 +299,7 @@ button, input, select {
 								}
 							}
 
-							@media(max-width: 576px){
+							@media(max-width: 768px){
 								float: none;
 								display: block;
 								padding: 8px 15px;
@@ -306,7 +314,7 @@ button, input, select {
 							text-decoration: none;
 						}
 
-						@media(max-width: 992px){
+						@media(max-width: 1199px){
 							border-bottom: none !important;
 							display: flex;
 							justify-content: space-between;
@@ -319,8 +327,17 @@ button, input, select {
 							}
 						}
 
-						@media(max-width: 576px){
+						@media(max-width: 768px){
 							font-size: 12px;
+						}
+
+						@media(max-width: 370px){
+							display: block;
+							&:before {
+								width: 100%;
+								display: block;
+								margin-bottom: 20px;
+							}
 						}
 					}
 				}
@@ -332,13 +349,13 @@ button, input, select {
 			}
 		}
 
-		@media(max-width: 576px){
+		@media(max-width: 768px){
 			padding: 20px 10px;
 		}
 
 	}
 
-	@media(max-width: 576px){
+	@media(max-width: 768px){
 		padding: 0 16px !important;
 	}
 }
